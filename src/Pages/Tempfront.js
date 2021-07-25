@@ -13,7 +13,7 @@ const Tempfront = () => {
   useEffect(() => {
 
     const fatchapi = async () => {
-      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${search},&appid=1ce34b39b209e33b8500e1150c79915b`);
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search},&appid=1ce34b39b209e33b8500e1150c79915b`);
       const apidata = await response.json();
       setData(apidata);
     };
